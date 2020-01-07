@@ -12,9 +12,9 @@ aligned with the warped current frame.
 
 The repository contains the python codes for tracking various entities in the image sequence.
 
--car.py - For tracking car
--human.py - For tracking human
--vase.py - For tracking vase
+- car.py - For tracking car
+- human.py - For tracking human
+- vase.py - For tracking vase
 
 Refer to the project report LK.pdf for further detials regarding the algorithm of Lucas-Kanade tracker. 
 

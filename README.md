@@ -33,10 +33,27 @@ Refer to the project report ```LK.pdf``` for further detials regarding the algor
 
 ## 2. Output Video:
 
-The output videos can be accesses here:
+The input data(image sequence for car, human and vase) can be accessed here:
+[Input Data](https://drive.google.com/open?id=1O4zRzTmIcXDeC6eolVBZbuwD4AmQ_QAH)
+
+The output videos can be accessed here:
 
 [Output Videos](https://drive.google.com/drive/folders/1HxfjfK__EUG9v9Yo_lXv5j2JV2Q1dNJ5?usp=sharing)
 
+### Output:
+
+Following is a glimpse of output of tracking a car from [this](https://drive.google.com/open?id=1fPcQelB0pKmv1A7plAy0k0o6tCJYgHfE) data.
+
+<img src="images/car.gif" width="600">
+
+
+Following is a glimpse of output of tracking a human from [this](https://drive.google.com/open?id=1hmi3yT8VDsDEyKfLZPQtuysk3pD-_dni) data.
+
+<img src="images/man.gif" width="600">
+
+Following is a glimpse of output of tracking a vase from [this](https://drive.google.com/open?id=1rqROcJ92ofkMHSwgLJdo53vJZMMliuOD) data.
+
+<img src="images/object.gif" width="600">
 
 
 ## 3. Lucas-Kanade Algorithm:
@@ -46,7 +63,7 @@ The output videos can be accesses here:
 A schematic overview of the Lucas-Kanade algorithm is shown above. The image I is
 warped with the current estimate of the warp in Step 1 and the result is subtracted from the template in Step 2 to yield the error image. The gradient of I is warped in Step 3, the Jacobian is computed in Step 4,
 and the two combined in Step 5 to give the steepest descent images. In Step 6, the Hessian matrix is computed from the steepest descent images. In Step7, the steepest descent parameter updates are computed by calculating dot product between the error image and the steepest descent images. In Step 8, the Hessian is inverted and multiplied by the steepest descent parameter updates to
-get the final parameter updates p which are then added to the
+get the final parameter updates (delta)p which are then added to the
 parameters p in Step 9.
 
 ### Algorithm steps:
@@ -56,14 +73,6 @@ The brief description of each steps in the Lucas Kanade algorithm is decribed be
 <img src="images/steps.png" width="800">
 
 
-### Output:
-
-
-<img src="images/car.gif" width="600">
-
-<img src="images/man.gif" width="600">
-
-<img src="images/object.gif" width="600">
 
 
 

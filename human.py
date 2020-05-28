@@ -123,7 +123,7 @@ p = np.zeros(6)
 template = images[0][rect[0,1]:rect[2,1], rect[0, 0]:rect[2, 0]]
 boundingBox_new = copy.deepcopy(rect)
 
-output_video = cv2.VideoWriter('car.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 10,
+output_video = cv2.VideoWriter('human.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 10,
        (images[0].shape[1], images[0].shape[0]))
 
 for i in range(1, len(images)):

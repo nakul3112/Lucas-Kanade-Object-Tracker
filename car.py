@@ -149,7 +149,7 @@ for i in range(1, len(images)):
                      [x_max, y_max],
                      [x_min, y_max]])
     
-    output_box = cv2.polylines(imagesColor[i], [rectTemp], True, (0, 0, 255), thickness = 5)
+    output_box = cv2.polylines(imagesColor[i], [rectTemp], True, (0,255,0), thickness = 5)
 
     cv2.imshow("Bounding Box", output_box)
     rectTemp = rect.astype(np.int32)
